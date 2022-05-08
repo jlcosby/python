@@ -27,4 +27,4 @@ del aws[1:3]
 #print(aws)
 #5. Print the new list and the new length of the list.
 aws = ['S3', 'CloudWatch', 'CloudFormation', 'RDS']
-#print(len(aws))
+print(len(aws))
