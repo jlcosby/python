@@ -1,4 +1,4 @@
-
+#create sns pipeline
 from create_sns_topic import create_sns_topic
 from list_sns_topics import list_sns_topics
 from add_sns_subscription import sns_subscribe_email
