@@ -14,7 +14,7 @@ class DecimalEncoder(json.JSONEncoder):
                 return int(o)
         return super(DecimalEncoder, self).default(o)
 
-dynamodb = boto3.resource('dynamodb', region_name='us-west-2')
+dynamodb = boto3.resource('dynamodb')
 
 table = dynamodb.Table('Movies')
 
@@ -52,7 +52,7 @@ class DecimalEncoder(json.JSONEncoder):
                 return int(o)
         return super(DecimalEncoder, self).default(o)
 
-dynamodb = boto3.resource("dynamodb", region_name='us-west-2')
+dynamodb = boto3.resource("dynamodb")
 
 table = dynamodb.Table('Movies')
 
@@ -89,7 +89,7 @@ class DecimalEncoder(json.JSONEncoder):
                 return int(o)
         return super(DecimalEncoder, self).default(o)
 
-dynamodb = boto3.resource('dynamodb', region_name='us-west-2')
+dynamodb = boto3.resource('dynamodb')
 
 table = dynamodb.Table('Movies')
 
@@ -133,7 +133,7 @@ class DecimalEncoder(json.JSONEncoder):
                 return int(o)
         return super(DecimalEncoder, self).default(o)
 
-dynamodb = boto3.resource('dynamodb', region_name='us-west-2')
+dynamodb = boto3.resource('dynamodb')
 
 table = dynamodb.Table('Movies')
 
@@ -175,7 +175,7 @@ class DecimalEncoder(json.JSONEncoder):
                 return int(o)
         return super(DecimalEncoder, self).default(o)
 
-dynamodb = boto3.resource('dynamodb', region_name='us-west-2')
+dynamodb = boto3.resource('dynamodb')
 
 table = dynamodb.Table('Movies')
 
@@ -211,6 +211,7 @@ else:
     print(json.dumps(response, indent=4, cls=DecimalEncoder))
 
 #delete item
+
 import boto3
 from botocore.exceptions import ClientError
 import json
@@ -226,7 +227,7 @@ class DecimalEncoder(json.JSONEncoder):
                 return int(o)
         return super(DecimalEncoder, self).default(o)
 
-dynamodb = boto3.resource('dynamodb', region_name='us-west-2')
+dynamodb = boto3.resource('dynamodb')
 
 table = dynamodb.Table('Movies')
 
