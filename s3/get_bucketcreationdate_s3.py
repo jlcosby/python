@@ -1,4 +1,4 @@
-#pip install boto3
+#install boto3
 
 import boto3
 
