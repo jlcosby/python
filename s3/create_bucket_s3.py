@@ -1,4 +1,4 @@
-#creating an s3 bucket using boto3
+#creating an s3 bucket 
 
 #pip install boto3
 import boto3
